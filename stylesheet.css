@@ -1,0 +1,117 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	min-width: 947px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav {
+	flex: 0 0 3.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #bdbdbd;
+	gap: 5rem;
+}
+
+main {
+	flex: 1 1 12rem;
+	background-color: antiquewhite;
+}
+
+footer {
+	flex: 0 0 2rem;
+	background-color: cornflowerblue;
+}
+
+#logo {
+	display: flex;
+	align-items: center; /* 로고(아이콘)과 텍스트 수직 정렬 */
+	min-width: 7.5rem;
+}
+
+.menu-list {
+	display: flex;
+	list-style-type: none;
+}
+
+.menu-list > li {
+	display: block;
+	position: relative;
+	width: 9rem;
+}
+
+.menu-list > li > label {
+	cursor: pointer;
+}
+
+.menu {
+	opacity: 0; /* 체크박스 이모티콘 안 보이게 설정 */
+}
+
+.menu-dropdown {
+	overflow: hidden;
+	position: absolute;
+	width: inherit;
+	max-height: 0px;
+	list-style-type: none;
+	background-color: #ffffff;
+	border-left: 0.5px solid #bdbdbd;
+	border-right: 0.5px solid #bdbdbd;
+	border-bottom: 0.5px solid #bdbdbd;
+	top: 2.3rem; /* nav 태그 밑에 오도록 위치 설정*/
+	left: 0;
+	transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+		opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* 스르륵 펼쳐지고 접히게 */
+}
+
+.menu-dropdown > li {
+	padding: 0.7rem;
+	border-bottom: 0.5px solid #bdbdbd;
+}
+
+.menu-dropdown > li:last-child {
+	border: none;
+}
+
+.menu-dropdown > li:hover {
+	background-color: #e6e4e4;
+}
+
+.menu:checked ~ .menu-dropdown {
+	max-height: 50rem;
+	/* border-left: 0.5px solid #bdbdbd; */
+	/* border-right: 0.5px solid #bdbdbd; */
+	/* border-bottom: 0.5px solid #bdbdbd; */
+}
+
+.checked-menu {
+	text-shadow: 1px 1px 0px #bdbdbd;
+	transition: text-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 메뉴 텍스트가 주어진 공간보다 길 경우, ...으로 표현*/
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* 해당 텍스트에 마우스 hover 시 툴팁으로 텍스트 전체 출력 */
+.truncate:hover {
+	content: attr(title);
+}
+
+/* https://www.sliderrevolution.com/resources/css-dropdown-menu/ */
