@@ -2,7 +2,8 @@
 
 - 동작 화면
 
-![ezgif com-video-to-gif](https://github.com/kmi0817/dropdown-menu/assets/62174395/9011c068-1d2b-419f-be95-f111cb5cfe8e)
+![ezgif com-video-to-gif](https://github.com/kmi0817/dropdown-menu/assets/62174395/39d9d818-cbe0-4067-9671-3e60e511b26c)
+
 
 ## CSS: `@import` vs `link`
 
