@@ -25,6 +25,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 0.5px solid #9eb8d9;
+	background-color: #eef5ff;
+	z-index: 100;
 }
 
 .logo {
@@ -41,4 +43,23 @@ nav a {
 nav a:hover {
 	background-color: #213555;
 	color: #ffffff;
+}
+
+.parallax {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#main-text {
+	position: absolute;
+	color: #e64848;
+}
+
+.parallax img {
+	position: absolute;
+	top: 60px;
+	left: 0;
 }
