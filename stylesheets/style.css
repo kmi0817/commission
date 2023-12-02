@@ -63,3 +63,19 @@ nav a:hover {
 	top: 60px;
 	left: 0;
 }
+
+section:not(.parallax) {
+	position: absolute;
+	padding: 3rem 5rem;
+}
+
+section:not(.parallax) h2 {
+	font-size: 3rem;
+	color: #a25772;
+	margin-bottom: 2rem;
+}
+
+section:not(.parallax) p {
+	font-size: 1.2rem;
+	margin: 1.5rem 0;
+}
