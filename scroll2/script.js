@@ -2,8 +2,8 @@ const t1 = gsap.timeline({
 	scrollTrigger: {
 		trigger: '.two',
 		start: '0% 95%',
-		end: '70% 50%',
-		scrub: 1, // reverse animation
+		end: '50% 50%',
+		scrub: true, // reverse animation
 		markers: true,
 	},
 });
@@ -40,8 +40,8 @@ const t2 = gsap.timeline({
 	scrollTrigger: {
 		trigger: '.three',
 		start: '0% 95%',
-		end: '20% 50%',
-		scrub: 1,
+		end: '50% 50%',
+		scrub: true,
 		markers: true,
 	},
 });
