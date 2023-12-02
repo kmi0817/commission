@@ -151,7 +151,6 @@ nav {
 /* three */
 
 .three {
-	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -162,19 +161,20 @@ nav {
 }
 
 .card {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	width: 25vw;
-	height: 75vh;
+	height: 65vh;
 	gap: 3vh;
 	border-radius: 20px;
 	background-color: #fff;
 }
 
 .card h1 {
-	margin-top: 48vh;
+	margin-top: 35vh;
 	font-size: 2.5vw;
 }
 
@@ -201,19 +201,24 @@ nav {
 
 #cake1 {
 	position: absolute;
-	top: 18%;
-	width: 20%;
+	top: 5%;
+	width: 80%;
 }
 
-#strawberry,
+#strawberry {
+	position: absolute;
+	top: -15%;
+	width: 70%;
+}
+
 #lime {
 	position: absolute;
-	top: 0;
-	width: 15%;
+	top: -18%;
+	width: 60%;
 }
 
 #cupcake3 {
 	position: absolute;
-	top: 16%;
-	width: 18%;
+	top: 0;
+	width: 70%;
 }
