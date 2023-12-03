@@ -4,7 +4,7 @@ const t1 = gsap.timeline({
 		start: '0% 95%',
 		end: '50% 50%',
 		scrub: true, // reverse animation
-		markers: true,
+		// markers: true, // for dev
 	},
 });
 
@@ -42,7 +42,7 @@ const t2 = gsap.timeline({
 		start: '0% 95%',
 		end: '50% 50%',
 		scrub: true,
-		markers: true,
+		// markers: true, // for dev
 	},
 });
 
