@@ -4,13 +4,7 @@ gsap.timeline({
 		pin: true,
 		pinSpacing: false,
 		start: () => (self.offsetHeight < window.innerHeight ? 'top top' : 'bottom bottom'),
-		snap: {
-			snapTo: (progress, self) => {
-				const starts = self.start;
-				const snapScroll = gsap.utils.snap(starts, self.scroll());
-				return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll);
-			},
-		},
+		snap: 1,
 		duration: 0.5,
 		markers: true,
 		id: 'one',
