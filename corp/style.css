@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+@keyframes bounceUpDown {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-3vh);
+	}
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+}
+
+header {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 8vh;
+	padding: 0vw 1.5vw;
+	font-size: 2.2vw;
+	z-index: 99;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+}
+
+/********* one *********/
+.one {
+	gap: 7vh;
+	background-color: #fff5e0;
+}
+
+.one h1 {
+	font-size: 7vw;
+}
+
+.one p {
+	width: 80%;
+}
+
+.one .down {
+	position: absolute;
+	bottom: 2%;
+	font-size: 3.5vw;
+	animation: bounceUpDown 0.5s infinite alternate;
+}
+
+/********* two *********/
+.two {
+	gap: 7vh;
+	background-color: #ff6969;
+}
+
+.two .line {
+	width: 80%;
+	height: 2vh;
+	background-color: #fff;
+}
+
+/********* three *********/
+.three {
+	position: relative;
+	background-color: #bb2525;
+}
+
+.three h1 {
+	position: absolute;
+	top: 20%;
+	right: 8%;
+	color: #fff;
+	font-size: 5vw;
+}
+
+.reveal {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#tree {
+	position: absolute;
+	left: 10%;
+	width: 30%;
+}
+
+.present {
+	width: 10%;
+}
+
+#present1 {
+	position: absolute;
+	bottom: 23%;
+	right: 23%;
+}
+
+#present2 {
+	position: absolute;
+	bottom: 30%;
+	right: 31%;
+}
+
+#present3 {
+	position: absolute;
+	bottom: 30%;
+	right: 14%;
+}
+
+#present4 {
+	position: absolute;
+	bottom: 35%;
+	right: 22%;
+}
+
+/********* four *********/
+.four {
+	background-color: #141e46;
+}
+
+.four p {
+	position: absolute;
+	color: #fff5e0;
+	font-size: 8vw;
+}
+
+/********* five *********/
+.five {
+	height: auto;
+	gap: 5vh;
+	padding: 5vw 5vw;
+	background-color: #fff5e0;
+}
+
+.five .part {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 3vw;
+}
+
+.five .pop {
+	width: 60vw;
+}
+
+.five .info {
+	width: 60vw;
+}
