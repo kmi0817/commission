@@ -66,7 +66,14 @@ section {
 }
 
 .two {
+	gap: 7vh;
 	background-color: #ff6969;
+}
+
+.two .line {
+	width: 80%;
+	height: 2vh;
+	background-color: #fff;
 }
 
 .three {
