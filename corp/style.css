@@ -45,6 +45,7 @@ section {
 	height: 100vh;
 }
 
+/********* one *********/
 .one {
 	gap: 7vh;
 	background-color: #fff5e0;
@@ -65,6 +66,7 @@ section {
 	animation: bounceUpDown 0.5s infinite alternate;
 }
 
+/********* two *********/
 .two {
 	gap: 7vh;
 	background-color: #ff6969;
@@ -76,6 +78,7 @@ section {
 	background-color: #fff;
 }
 
+/********* three *********/
 .three {
 	position: relative;
 	background-color: #bb2525;
@@ -128,8 +131,15 @@ section {
 	right: 22%;
 }
 
+/********* four *********/
 .four {
 	background-color: #141e46;
+}
+
+.four p {
+	position: absolute;
+	color: #fff5e0;
+	font-size: 8vw;
 }
 
 .five {
