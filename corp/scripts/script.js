@@ -8,9 +8,9 @@ gsap.timeline({
 		pinSpacing: false,
 		start: () => (self.offsetHeight < window.innerHeight ? 'top top' : 'bottom bottom'),
 		snap: 1,
-		duration: 0.5,
-		markers: true,
-		id: 'one',
+		duration: 1,
+		// markers: true,
+		// id: 'one',
 	},
 });
 
@@ -24,8 +24,8 @@ gsap
 			start: 'top top',
 			end: '+=100%',
 		},
-		markers: true,
-		id: 'two',
+		// markers: true,
+		// id: 'two',
 	})
 	.from('.line', {
 		scaleX: 0,
@@ -43,10 +43,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		ScrollTrigger.create({
 			trigger: e,
-			markers: true,
+			// markers: true,
 			onEnter: () => animate(e),
 			onEnterBack: () => animate(e, -1),
 			onLeave: () => hide(e),
 		});
 	});
 });
+
+// four
+gsap.timeline({
+	scrollTrigger: {
+		trigger: '.four',
+		scrub: true,
+		pin: true,
+		start: 'top top',
+		end: '+=100%',
+		// markers: true,
+		// id: 'four',
+	},
+});
+
+gsap
+	.timeline({
+		scrollTrigger: {
+			trigger: '.four',
+			start: 'center center',
+			scrub: true,
+			// markers: true,
+		},
+	})
+	.from('.p1', { opacity: 0, y: 50, duration: 5 })
+	.to('.p1', { opacity: 0, y: -50, duration: 5 })
+	.from('.p2', { opacity: 0, y: 50, duration: 5 })
+	.to('.p2', { opacity: 0, y: -50, duration: 5 })
+	.from('.p3', { opacity: 0, y: 50, duration: 5 })
+	.to('.p3', { opacity: 0, y: -50, duration: 5 })
+	.from('.p4', { opacity: 0, y: 50, duration: 5 })
+	.to('.p4', { opacity: 0, y: -50, duration: 5 })
+	.from('.p5', { opacity: 0, y: 50, duration: 5 })
+	.to('.p5', { opacity: 0, y: -50, duration: 5 })
+	.from('.p6', { opacity: 0, y: 50, duration: 5 })
+	.to('.p6', { opacity: 0, y: -50, duration: 5 });
