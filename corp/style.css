@@ -142,6 +142,26 @@ section {
 	font-size: 8vw;
 }
 
+/********* five *********/
 .five {
-	background-color: #3b185f;
+	height: auto;
+	gap: 5vh;
+	padding: 5vw 5vw;
+	background-color: #fff5e0;
+}
+
+.five .part {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 3vw;
+}
+
+.five .pop {
+	width: 60vw;
+}
+
+.five .info {
+	width: 60vw;
 }
