@@ -49,6 +49,18 @@ document.addEventListener('DOMContentLoaded', () => {
 			onLeave: () => hide(e),
 		});
 	});
+
+	const pops = gsap.utils.toArray('.pop');
+	pops.forEach((e) => {
+		gsap.from(e, {
+			opacity: 0,
+			scale: 0.5,
+			scrollTrigger: {
+				trigger: e,
+				toggleActions: 'restart none none reverse',
+			},
+		});
+	});
 });
 
 // four
@@ -85,3 +97,5 @@ gsap
 	.to('.p5', { opacity: 0, y: -50, duration: 5 })
 	.from('.p6', { opacity: 0, y: 50, duration: 5 })
 	.to('.p6', { opacity: 0, y: -50, duration: 5 });
+
+// five
