@@ -57,17 +57,17 @@
 				<img id="strawberry" src="${path}/resources/assets/strawberry.png" />
 				<img id="cake1" src="${path}/resources/assets/cake1.png" />
 				<h1>${desserts.get(0).name}</h1>
-				<a href="/example/readmore?id=${desserts.get(0).id }"><button>Read More</button></a>
+				<a href="/readmore?id=${desserts.get(0).id }"><button>Read More</button></a>
 			</div>
 			<div class="card second">
 				<h1>${desserts.get(1).name}</h1>
-				<a href="/example/readmore?id=${desserts.get(1).id}"><button>Read More</button></a>
+				<a href="/readmore?id=${desserts.get(1).id}"><button>Read More</button></a>
 			</div>
 			<div class="card thrid">
 				<img id="lime" src="${path}/resources/assets/mint.png" />
 				<img id="cupcake3" src="${path}/resources/assets/cupcake3.png" />
 				<h1>${desserts.get(2).name}</h1>
-				<a href="/example/readmore?id=${desserts.get(2).id}"><button>Read More</button></a>
+				<a href="/readmore?id=${desserts.get(2).id}"><button>Read More</button></a>
 			</div>
 		</section>
 	</main>
