@@ -1,0 +1,38 @@
+body {
+	background: linear-gradient(100deg, #ffc5c5, #f9f3cc);
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	padding: 8vh 0;
+	gap: 5vh;
+}
+
+.event {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 40vw;
+	height: 30vh;
+	gap: 2vh;
+	padding: 1vw;
+	border-radius: 20px;
+	background-color: #fff;
+}
+
+.event .type {
+	color: #3eb8e6;
+}
+
+.event h2 {
+	font-size: 1.5vw;
+}
+
+.event .period {
+	color: #6a6a6a;
+}
