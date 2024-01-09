@@ -13,9 +13,9 @@ public class DbManager {
             String jdbc_driver = "com.mysql.cj.jdbc.Driver";
             
             // MySQL 연결 정보
-            String jdbc_url = "jdbc:mysql://127.0.0.1:3306/commission";
-            String jdbc_user = "commission";
-            String jdbc_passwd = "commission101";
+            String jdbc_url = System.getenv("jdbc_url");
+            String jdbc_user = System.getenv("jdbc_user");
+            String jdbc_passwd = System.getenv("jdbc_passwd");
 			
 			Class.forName(jdbc_driver);
 			conn = DriverManager.getConnection(jdbc_url, jdbc_user, jdbc_passwd);
