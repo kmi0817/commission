@@ -10,7 +10,9 @@
 		href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
 		rel="stylesheet"
 	/>
-	<link rel="stylesheet" href="${path}/resources/css/style.css" />
+	<link rel="stylesheet" href="${path}/resources/css/root.css" />
+	<link rel="stylesheet" href="${path}/resources/css/header.css" />
+	<link rel="stylesheet" href="${path}/resources/css/home.css" />
 	<title>Spring Desserts</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
 		<section class="one">
 			<h1>Sweets</h1>
 			<img id="straw" src="${path}/resources/assets/straw.png" />
-			<img id="icecream3" src="${path}/resources/assets/icecream3.png" />
+			<img id="icecream3" src="${path}/resources/assets/${desserts.get(1).name}.png" />
 			<img id="cupcake2" src="${path}/resources/assets/cupcake2.png" />
 			<img id="candy1" src="${path}/resources/assets/candy1.png" />
 			<img id="americano" src="${path}/resources/assets/americano.png" />
@@ -55,9 +57,9 @@
 		<section id="menu" class="three">
 			<div class="card first">
 				<img id="strawberry" src="${path}/resources/assets/strawberry.png" />
-				<img id="cake1" src="${path}/resources/assets/cake1.png" />
+				<img id="cake1" src="${path}/resources/assets/${desserts.get(0).name}.png" />
 				<h1>${desserts.get(0).name}</h1>
-				<a href="/readmore?id=${desserts.get(0).id }"><button>Read More</button></a>
+				<a href="/readmore?id=${desserts.get(0).id}"><button>Read More</button></a>
 			</div>
 			<div class="card second">
 				<h1>${desserts.get(1).name}</h1>
@@ -65,7 +67,7 @@
 			</div>
 			<div class="card thrid">
 				<img id="lime" src="${path}/resources/assets/mint.png" />
-				<img id="cupcake3" src="${path}/resources/assets/cupcake3.png" />
+				<img id="cupcake3" src="${path}/resources/assets/${desserts.get(2).name}.png" />
 				<h1>${desserts.get(2).name}</h1>
 				<a href="/readmore?id=${desserts.get(2).id}"><button>Read More</button></a>
 			</div>
