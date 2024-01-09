@@ -42,14 +42,14 @@ public class HomeController {
 	public String home(Locale locale, Model model) throws Exception {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
-		springIoCTestObj.set("Hello IoC and DI");
-		model.addAttribute("testText", springIoCTestObj.getMessage());
+//		Date date = new Date();
+//		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+//		
+//		String formattedDate = dateFormat.format(date);
+//		
+//		model.addAttribute("serverTime", formattedDate );
+//		springIoCTestObj.set("Hello IoC and DI");
+//		model.addAttribute("testText", springIoCTestObj.getMessage());
 
 		List<Map<String, Object>> desserts = dessertsModel.findAll();
 		
