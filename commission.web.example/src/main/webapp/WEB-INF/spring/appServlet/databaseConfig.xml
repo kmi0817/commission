@@ -17,7 +17,7 @@
 		http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 
 	<!-- Scans within the base package of the application for @Components to configure as beans -->
-	<context:component-scan base-package="spring.desserts.model" />
+	<context:component-scan base-package="spring.desserts.repository" />
 
 	<import resource="classpath:spring/desserts/database/dao-context.xml" />
 	

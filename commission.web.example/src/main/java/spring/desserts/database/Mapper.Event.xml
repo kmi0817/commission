@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Event">
+	<select id="findAll" resultType="spring.desserts.domain.Event">
+		SELECT * FROM events
+	</select>
+	
+	<select id="findById" resultType="spring.desserts.domain.Event">
+		SELECT * FROM events WHERE id = #{id}
+	</select>
+	
+	<insert id="save" parameterType="spring.desserts.domain.Event">
+		INSERT INTO events(title, type, period)
+		VALUES(#{title}, #{type}, #{period})
+	</insert>
+	
+	<delete id="deleteById" parameterType="Long">
+		DELETE FROM events WHERE id = #{id}
+	</delete>
+</mapper>
