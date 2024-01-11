@@ -5,7 +5,6 @@
 	<nav>
 		<a href="/#menu">Menu</a>
 		<a href="/event">Event</a>
-		<a href="/store">Store</a>
-		<a href="/about">About</a>
+		<a href="/event/admin">Admin</a>
 	</nav>
 </header>

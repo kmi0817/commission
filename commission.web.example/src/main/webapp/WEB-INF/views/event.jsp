@@ -20,7 +20,7 @@
 		<%@include file = "header.jsp" %>
 		
 		<section class="one">
-			<h1>Sweets' Event!</h1>
+			<h1 class="reveal">Sweets' Event!</h1>
 		</section>
 		
 		<section class="two">

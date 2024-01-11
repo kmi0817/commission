@@ -8,4 +8,8 @@
 	<select id="findEventsAll" resultType="map">
 		SELECT * FROM events
 	</select>
+	
+	<insert id="saveEvent" parameterType="spring.desserts.dao.EventsDO">
+		INSERT INTO events VALUES(#{id}, #{title}, #{type}, #{period})
+	</insert>
 </mapper>

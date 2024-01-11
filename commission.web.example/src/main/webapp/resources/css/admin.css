@@ -1,0 +1,92 @@
+body {
+	background: linear-gradient(100deg, #f9f3cc, #ffd6a5);
+}
+
+h1 {
+	font-size: 5vw;
+	color: #fff;
+}
+
+.one {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 8vh;
+}
+
+
+.two {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8vh 0;
+	margin: 0 5vw;
+	gap: 5vw;
+}
+
+.two div {
+	width: 50%;
+	height: 60vh;
+	background: #fff;
+}
+
+#list {
+	overflow-y: scroll;
+}
+
+#list ol {
+	list-style: none;
+	padding: 1vw;
+}
+
+#list ol li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1vw;
+	padding: 0.5vw;
+	margin: 1.5vw 0;
+	color: #3b3b3b;
+}
+
+#list ol li:hover {
+	background: #f1f1f1;
+	border-radius: 10px;
+}
+
+.event-delete {
+	border: none;
+}
+
+.event-delete i {
+	font-size: 1.5vw;
+	color: #ff8080;
+}
+
+#add {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#event-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.5vw;
+}
+
+#event-form button {
+	width: 10vw;
+	padding: 1.5vh;
+	background: #ff8080;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+}
+
+input {
+	border: 1px solid #acacac;
+	border-radius: 10px;
+	padding: 0.5vw;
+}
