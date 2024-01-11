@@ -19,7 +19,11 @@
 	<main>
 		<%@include file = "header.jsp" %>
 		
-		<section>
+		<section class="one">
+			<h1>Sweets' Event!</h1>
+		</section>
+		
+		<section class="two">
 			<c:forEach items="${events}" var="event" varStatus="vs">
 			<div class="reveal event">
 				<p class="reveal type">${event.type}</p>
