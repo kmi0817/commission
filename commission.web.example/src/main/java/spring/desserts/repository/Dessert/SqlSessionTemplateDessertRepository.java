@@ -7,11 +7,9 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.mybatis.spring.SqlSessionTemplate;
-import org.springframework.stereotype.Repository;
 
 import spring.desserts.domain.Dessert;
 
-@Repository
 public class SqlSessionTemplateDessertRepository implements DessertRepository {
 	
 	@Inject

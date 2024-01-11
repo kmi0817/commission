@@ -7,11 +7,9 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.mybatis.spring.SqlSessionTemplate;
-import org.springframework.stereotype.Repository;
 
 import spring.desserts.domain.Event;
 
-@Repository
 public class SqlSessionTemplateEventRepository implements EventRepository {
 	
 	@Inject
