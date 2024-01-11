@@ -28,8 +28,8 @@ public class HomeController {
 	}
 
 	@GetMapping("/readmore")
-	public String readmore(@RequestParam(name = "id", required = true) String id, Model model) {
-		Dessert dessert = dessertService.findOne((long) Integer.parseInt(id));
+	public String readmore(@RequestParam(name = "id", required = true) Long id, Model model) {
+		Dessert dessert = dessertService.findOne(id);
 		
 		model.addAttribute("id", dessert.getId());
 		model.addAttribute("name", dessert.getName());
