@@ -33,7 +33,7 @@
 						${event.title}(${event.type}, ${event.period})
 					</p>
 					<button class="event-delete" type="button">
-					<i class="ri-delete-bin-6-fill"></i>
+						<i id="${event.id}" class="ri-delete-bin-6-fill"></i>
 					</button>
 				</li>
 				</c:forEach>
@@ -51,6 +51,6 @@
 			</div>
 		</section>
 	</main>
-	
+	<script src="${path}/resources/script/admin.js"></script>
 </body>
 </html>

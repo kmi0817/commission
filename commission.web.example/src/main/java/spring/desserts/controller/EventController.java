@@ -4,7 +4,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import spring.desserts.domain.Event;
@@ -36,6 +38,11 @@ public class EventController {
 		eventService.create(event);
 		
 		return "redirect:/event/admin";
+	}
+	
+	@DeleteMapping("/event/{id}")
+	public void remove(@PathVariable("id") Long id) {
+		eventService.remove(id);
 	}
 	
 	@GetMapping("/event/admin")
