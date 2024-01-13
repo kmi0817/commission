@@ -38,6 +38,11 @@
 				</li>
 				</c:forEach>
 			</ol>
+			<nav>
+				<c:forEach var="i" begin="1" end="${page}">
+					<a href="/event/admin?offset=${i}">${i}</a>
+				</c:forEach>
+			</nav>
 			</div>
 			
 			<div id="add">
